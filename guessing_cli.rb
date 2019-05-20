@@ -4,7 +4,7 @@ def run_guessing_game
   input = gets.chomp
   unless input == "exit"
     computer = Random.new.rand(1..6)
-    if input.to_i == computer.to_i
+    if input == computer.to_i
       puts "You guessed the correct number!"
     else
       puts "The computer guessed #{computer}."
