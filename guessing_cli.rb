@@ -3,7 +3,7 @@ def run_guessing_game
   puts "Guess a number between 1 and 6."
   input = gets.chomp
   #unless input == "exit"
-    computer = 1 + rand(6)
+    computer = Random.new.rand(1..6)
     if input.to_i == computer.to_i
       puts "You guessed the correct number!"
     else
